@@ -3,17 +3,16 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="description" content="This ia a HTML document containing HTML tags"> 
-	<meta name="keywords" content="HTML, HTML5, Tags, Basic HTML, Standard Tags">
+	<meta name="keywords" content="employee list, animals, HTML entities, special tags, hidden comment">
 	<title>Assignment 2</title>
 </head>
 <body>
 	<header>
 		<h1>Assignment 2</h1>
-		<h2>Employee List</h2>
 	</header>
 	
-	<main>		
-		<div>
+	<main>	
+		<h2>Employee List</h2>	
 			<section>
 				<table border="1">
               		<thead>
@@ -30,7 +29,7 @@
                             <td>john@fakemail.com</td>
                         </tr>
                         <tr>
-                            <td >2</td>
+                            <td>2</td>
                             <td>Sam</td>
                             <td>sam@fakemail.com</td> 
                         </tr>
@@ -49,19 +48,19 @@
                         	<td>Rob</td>
                         	<td>rob@fakemail.com</td>
                         </tr>
-                        </tbody>
-                        <tfoot>
-                         	<tr>
-                         		<td>All of the above are division heads</td>
-                         	</tr>
-                        </tfoot>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                        	<td colspan="3">All of the above are division heads</td>
+                        </tr>
+                    </tfoot>
             	</table>
 			</section>
-		</div>
-		
 		<section>
 			<h2>Animals</h2>	
 				<article>
+					<figure>
+					<figcaption>
 					<img src="img/elephant.jpg" alt="elephant" width="300" height="200"> 
 					<figcaption>This is an elephant.</figcaption>
 					<img src="img/lion.jpg" alt="lion" width="300" height="200">
@@ -72,13 +71,14 @@
 					<figcaption>This is a whale.</figcaption>
 					<img src="img/hawk.jpg" alt="hawk" width="300" height="200">
 					<figcaption>This is a hawk.</figcaption>
+					</figure>
 				</article>	
 		</section>	
 		
 		<section>
 			<h2>HTML Entities</h2>
 			<article>
-				<p>Non Breaking Space:</p>
+				<p>Non Breaking Space: &#160;</p>
 				<p>Ampersand: &#38;</p>
 				<p>Pound: &#163;</p>
 				<p>Copyright: &#169;</p>
@@ -93,10 +93,8 @@
 					<dd>-Black hot drink</dd>
 					<dt>Milk</dt>
 					<dd>-White cold drink</dd>
-					<dt>HTML</dt>
-					<dd></dd>
-					<dt>CSS</dt>
-					<dd></dd>
+					<p>HTML</p>
+					<p>CSS</p>
 				</dl>
 			</article>
 			
