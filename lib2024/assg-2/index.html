@@ -2,9 +2,13 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<meta name="description" content="This ia a HTML document containing HTML tags"> 
+	<!--Default charater encoding in HTML-->
+	<meta name="description" content="This ia a HTML document containing HTML tags">
+	<!--A description of what is contained in this document-->  
 	<meta name="keywords" content="employee list, animals, HTML entities, special tags, hidden comment">
+	<!--This will allow for when any of these words are searched, this web page can appear in the results-->
 	<title>Assignment 2</title>
+	<!--This allows for the page to be searched-->
 </head>
 <body>
 	<header>
@@ -13,17 +17,21 @@
 	
 	<main>	
 		<h2>Employee List</h2>	
-			<section>
+			<section> 	
 				<table border="1">
+				<!--This is the start tag for the table--> 	
               		<thead>
-                   		<tr>
+              		<!--This is the head of the table-->
+                   		<tr>	
                      		<th>Id</th>
                            	<th>Name</th>
                             <th>Email</th>
                         </tr>
                     </thead>
                     <tbody>
+                    <!--Tag for the body of the table--> 	
                         <tr>
+                        <!--The tag for each individual employee in the list-->	
                             <td>1</td>
                             <td>John</td>
                             <td>john@fakemail.com</td>
@@ -58,26 +66,30 @@
 			</section>
 		<section>
 			<h2>Animals</h2>	
-				<article>
-					<figure>
-					<figcaption>
-					<img src="img/elephant.jpg" alt="elephant" width="300" height="200"> 
-					<figcaption>This is an elephant.</figcaption>
-					<img src="img/lion.jpg" alt="lion" width="300" height="200">
-					<figcaption>This is a lion.</figcaption>
-					<img src="img/snake.jpg" alt="snake" width="300" height="200">
-					<figcaption>This is a snake.</figcaption>
-					<img src="img/whale.jpg" alt="whale" width="300" height="200">
-					<figcaption>This is a whale.</figcaption>
-					<img src="img/hawk.jpg" alt="hawk" width="300" height="200">
-					<figcaption>This is a hawk.</figcaption>
-					</figure>
-				</article>	
+				<section>
+					<article>
+						<figure>
+						<img src="img/elephant.jpg" alt="elephant" width="300" height="200"> 
+						<!--The tag for each image-->
+						<figcaption>This is an elephant.</figcaption>
+						<!--Caption for the image-->
+						<img src="img/lion.jpg" alt="lion" width="300" height="200">
+						<figcaption>This is a lion.</figcaption>
+						<img src="img/snake.jpg" alt="snake" width="300" height="200">
+						<figcaption>This is a snake.</figcaption>
+						<img src="img/whale.jpg" alt="whale" width="300" height="200">
+						<figcaption>This is a whale.</figcaption>
+						<img src="img/hawk.jpg" alt="hawk" width="300" height="200">
+						<figcaption>This is a hawk.</figcaption>
+						</figure>
+					</article>
+				</section>		
 		</section>	
 		
 		<section>
 			<h2>HTML Entities</h2>
 			<article>
+				<!--HTML entities for various symbols-->
 				<p>Non Breaking Space: &#160;</p>
 				<p>Ampersand: &#38;</p>
 				<p>Pound: &#163;</p>
@@ -102,6 +114,7 @@
 				<details>
 					<summary>What is a mobile Phone?</summary>
 					<p>A mobile phone, cell phone or hand phone, sometimes shortened to simply mobile, cell or just phone, is a portable telephone that can make and receive calls over a radio frequency link while the user is moving within a telephone service area.</p>
+					<!--A summery of what a mobil phone is-->
 				</details>
 			</article>
 		</section>
