@@ -1,0 +1,160 @@
+<!DOCTYPE html> 
+<html lang="en-ca">
+<!--Tag for everything to be in Canadain English-->
+<head>
+	<meta charset="utf-8">
+	<!--Default charater encoding in HTML-->
+	<meta name="description" content="This ia a HTML document containing HTML tags">
+	<!--A description of what is contained in this document-->  
+	<meta name="keywords" content="Form, personal information, HTML form">
+	<!--This will allow for when any of these words are searched, this web page can appear in the results-->
+	<title>Assignment 3</title>
+	<!--This allows for the page to be searched-->
+</head>
+<body>
+	<header>
+		<h1>Please Fill Out</h1>
+	</header>
+	<main>
+		<div id="wrapper" class="wrapper">
+			<section id="html-forms" class="main-section">
+				<form action="somepage.php" method="get">
+					
+					<div id="fn-container" class="form-elm">
+						<label for="FirstName">First name</label>
+						<input type="text" name="FirstName" id="FirstName" placeholder="First name goes here">
+					</div> <br>
+					
+					<div id="ln-container" class="form-elm">
+						<label for="LastName">Last Name</label>
+						<input type="text" name="LastName" id="LastName" placeholder="Enter your Last Name here">
+					</div> <br>
+					
+					<div id="email-container" class="form-elm">
+						<label for="email">Email</label>
+						<input type="email" name="email" id="email" value="example@g.com" readonly>
+					</div> <br>
+					
+					<div id="pass-container" class="form-elm">
+						<label for="pass">Password</label>
+						<input type="password" name="pass" id="pass" required placeholder="Enter password here"> <br>
+					</div> 
+
+					<div id="sum-container" class="form-elm">
+						<label for="summary">Introduction</label> 
+						<textarea name="summary" id="summary" placeholder="Enter summary here">Introduce yourself!
+						</textarea> <br>
+					</div>
+
+					<div id="st-container" class="form-elm">
+						<label for="dte">Date of birth</label>
+						<input type="date" name="dte" id="dte"> <br>
+					</div>
+
+					<div id="tel-container" class="form-elm">
+						<label for="Mobile_number">Mobile number</label>
+						<input type="tel" name="Mobile_number" placeholder="xxx-xxx-xxxx"> <br>	
+					</div> 
+
+					<div id="radio-container" class="form-elm">
+						<p>What is your gender?</p>
+						<label for="Male">
+							<input type="radio" name="like-form" id="Male" value="Male" >
+							Male
+						</label>
+						<label for="Female">
+							<input type="radio" name="like-form" id="Female" value="Female">
+							Female
+						</label>
+						<label for="Prefer_not_to_say">
+							<input type="radio" name="like-form" id="Prefer_not_to_say" value="Prefer_not_to_say">
+							Prefer not to say 
+						</label> <br>
+					</div> 
+					
+					<div id="adress-container" class="form-elm">
+						<label for="adress">Home Adress</label>
+						<input type="text" name="Adress" id="Adress" placeholder="Input home adress here"> <br>
+					</div> 
+					
+					<div id="city-container" class="form-elm">
+						<label for="city">City</label>
+						<input type="text" name="City" id="City" placeholder="Input city here"> <br>
+					</div> 
+					
+					<div id="province-contianer" class="form-elm">
+						<label for="Province">Province</label>
+						<select id="province" name="Province">
+							<!-- optgroup or option group is used to create groups in a select element -->
+							<optgroup label="Canada">
+								<!-- when replacing a space or separating tow words in a value, as a best practice, use "_" instead of "-" as "-" might not get interpreted properly by the server -->
+								<option value="Ontario">Ontario</option>
+								<option value="Quebec">Quebec</option>
+								<option value="British_Columbia">British Columbia</option>
+								<option value="Alberta">Alberta</option>
+								<option value="Manitoba">Manitoba</option>
+								<option value="Saskatchewan">Saskatchewan</option>
+								<option value="Nova_Scotia">Nova Scotia</option>
+								<option value="New_Brunswick">New Brunswick</option> 
+								<option value="Newfoundland_and_Labrador">Newfoundland and Labrador</option>
+								<option value="Prince_Edward_Island">Prince Edward Island</option>
+								<option value="Northwest_Territories">Northwest Territories</option> 
+								<option value="Yukon">Yukon</option>
+								<option value="Nanavut">Nanavut</option>
+								<option value="N/A">N/A</option>
+							</optgroup>
+						</select> <br>
+					</div>
+					
+					<div id="country-contianer" class="form-elm">
+						<label for="Country">Country</label>
+						<select id="Country" name="Country">
+							<optgroup>
+								<option value="Canada">Canada</option>
+								<option value="Other">Other</option>
+							</optgroup>
+						</select> <br>
+					</div> 
+
+					<div id="postal-container" class="form-elm">
+						<label for="Postalcode">Postal Code</label>
+						<input type="text" name="Postalcode" id="Postalcode" placeholder="L4L 6T6"> <br>
+					</div> 
+
+					<div id="hobbies-container" class="form-elm">
+						<h3>Hobies/Interests:</h3>
+						<label for="skating">
+							<input type="checkbox" name="hobbies" id="skating" value="skating"> Skating
+						 </label><br>
+
+						<label for="soccer">
+						<input type="checkbox" name="hobbies" id="soccer" value="soccer"> Soccer 
+						</label> <br>
+
+						<label for="reading">
+						<input type="checkbox" name="hobbies" id="reading" value="reading"> Reading 
+						</label> <br>
+
+						<label for="hiking">
+							<input type="checkbox" name="hobbies" id="hiking" value="hiking"> Hiking
+						</label> <br>	
+						
+						<label for="cooking">
+							<input type="checkbox" name="hobbies" id="cooking" value="cooking"> Cooking
+						</label> <br>
+					</div> 
+
+					<div id="url-container" class="form-elm">
+						<label for="ur">Enter a URL:</label>	
+						<input type="url" id="url" name="url" placeholder="www.example.com" required> <br> 
+					</div> 
+					<!-- button type="submit" creates a button that submits the form and HTML5 elements get automatically validated by the browser -->
+					<button type="submit">Submit</button>
+					<!-- button typ="reset" resets the form values, without needing to refresh the page -->
+					<button type="reset">Reset</button>
+				</form>
+			</section>
+		</div>
+	</main>
+</body>
+</html>
