@@ -17,45 +17,46 @@
 	</header>
 	<main>
 		<div id="wrapper" class="wrapper">
+			<!--Form attributes required for form-->
 			<section id="html-forms" class="main-section">
-				<form action="somepage.php" method="get">
-					
+				<form action="somepage.php" method="get">	
+					<!--Asking for First name-->
 					<div id="fn-container" class="form-elm">
 						<label for="FirstName">First name</label>
 						<input type="text" name="FirstName" id="FirstName" placeholder="First name goes here">
 					</div> <br>
-					
+					<!--Asking forLast name -->
 					<div id="ln-container" class="form-elm">
 						<label for="LastName">Last Name</label>
 						<input type="text" name="LastName" id="LastName" placeholder="Enter your Last Name here">
 					</div> <br>
-					
+					<!--Asking for Emal-->
 					<div id="email-container" class="form-elm">
 						<label for="email">Email</label>
 						<input type="email" name="email" id="email" value="example@g.com" readonly>
 					</div> <br>
-					
+					<!--Asking them to create a password-->
 					<div id="pass-container" class="form-elm">
 						<label for="pass">Password</label>
 						<input type="password" name="pass" id="pass" required placeholder="Enter password here"> <br>
 					</div> 
-
+					<!--Asking them to introduce themselves-->
 					<div id="sum-container" class="form-elm">
 						<label for="intro">Introduction</label> 
 						<textarea name="intro" id="intro" placeholder="Introduce yourself!">Introduce yourself!
 						</textarea> <br>
 					</div>
-
+					<!--Asking for their date of birth-->
 					<div id="st-container" class="form-elm">
 						<label for="dte">Date of birth</label>
 						<input type="date" name="dte" id="dte"> <br>
 					</div>
-
+					<!--Asking for the phone numer-->
 					<div id="tel-container" class="form-elm">
 						<label for="Mobile_number">Mobile number</label>
-						<input type="tel" name="Mobile_number" placeholder="xxx-xxx-xxxx"> <br>	
+						<input type="tel" name="Mobile_number" id="Mobile_number" placeholder="xxx-xxx-xxxx"> <br>	
 					</div> 
-
+					<!--Asking for their gender-->
 					<div id="radio-container" class="form-elm">
 						<p>What is your gender?</p>
 						<label for="Male">
@@ -71,23 +72,21 @@
 							Prefer not to say 
 						</label> <br>
 					</div> 
-					
+					<!--Askign for their home adress-->
 					<div id="adress-container" class="form-elm">
 						<label for="adress">Home Adress</label>
-						<input type="text" name="Adress" id="Adress" placeholder="Input home adress here"> <br>
+						<input type="text" name="Adress" id="adress" placeholder="Input home adress here"> <br>
 					</div> 
-					
+					<!--Asking them to specify the city they live in-->
 					<div id="city-container" class="form-elm">
 						<label for="city">City</label>
-						<input type="text" name="City" id="City" placeholder="Input city here"> <br>
+						<input type="text" name="City" id="city" placeholder="Input city here"> <br>
 					</div> 
-					
+					<!--Aasking them what province they live in-->
 					<div id="province-contianer" class="form-elm">
 						<label for="Province">Province</label>
-						<select id="province" name="Province">
-							<!-- optgroup or option group is used to create groups in a select element -->
+						<select id="Province" name="Province">
 							<optgroup label="Canada">
-								<!-- when replacing a space or separating tow words in a value, as a best practice, use "_" instead of "-" as "-" might not get interpreted properly by the server -->
 								<option value="Ontario">Ontario</option>
 								<option value="Quebec">Quebec</option>
 								<option value="British_Columbia">British Columbia</option>
@@ -105,22 +104,22 @@
 							</optgroup>
 						</select> <br>
 					</div>
-					
+					<!--Asking if they live in Canada or not-->
 					<div id="country-contianer" class="form-elm">
 						<label for="Country">Country</label>
 						<select id="Country" name="Country">
-							<optgroup>
+							<optgroup label="Countries">
 								<option value="Canada">Canada</option>
 								<option value="Other">Other</option>
 							</optgroup>
 						</select> <br>
 					</div> 
-
+					<!--Asking for their postal code-->
 					<div id="postal-container" class="form-elm">
 						<label for="Postalcode">Postal Code</label>
 						<input type="text" name="Postalcode" id="Postalcode" placeholder="L4L 6T6"> <br>
 					</div> 
-
+					<!--Askign them about their hobbies-->
 					<div id="hobbies-container" class="form-elm">
 						<h3>Hobies/Interests:</h3>
 						<label for="skating">
@@ -143,14 +142,14 @@
 							<input type="checkbox" name="hobbies" id="cooking" value="cooking"> Cooking
 						</label> <br>
 					</div> 
-
+					<!--Asking if they have a URL-->
 					<div id="url-container" class="form-elm">
-						<label for="ur">Enter a URL:</label>	
-						<input type="url" id="url" name="url" placeholder="www.example.com" required> <br> 
+						<label for="url">Enter a URL:</label>	
+					s	<input type="url" id="url" name="url" placeholder="www.example.com" required> <br> 
 					</div> 
-					<!-- button type="submit" creates a button that submits the form and HTML5 elements get automatically validated by the browser -->
+					<!--Submit button-->
 					<button type="submit">Submit</button>
-					<!-- button typ="reset" resets the form values, without needing to refresh the page -->
+					<!--Reset button-->
 					<button type="reset">Reset</button>
 				</form>
 			</section>
