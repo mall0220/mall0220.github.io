@@ -1,0 +1,192 @@
+@charset "utf-8";
+ /*http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*CSS clearfix*/
+
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/* Colour Pallet
+
+    Logo: #76acaf;
+    Nav bar: #72a9ae;
+    Titles: #a3c8c3;
+    Footer: #454545;
+*/
+
+/* background image */
+
+#wrapper {
+    max-width: 960px;
+    margin: auto;
+    background-image: url(../img/small-crackle-bright.png);
+}
+
+/* Logo */ 
+
+header {
+    background-color: white;
+}
+
+header h1 {
+    font-size: 30px;
+    color: #76acaf; 
+    background-color: white;
+    margin: 30px;
+}
+
+/* Nav buttons */
+
+header nav {
+    background-color: #72a9ae;
+    text-align: inline-block;
+    list-style-type: none;
+    margin-top: 2%;
+    padding: 0;
+    color: black;
+}
+
+header nav ul li {
+    display: inline-block;
+    color: black;
+    font-size: 15px;
+    margin:0 2% 0 2%;
+    padding: 15px 25px 15px 25px;
+    width: 10px; 
+}
+
+header nav ul li a {
+    text-decoration: none;
+    margin: 1% 2% 1% 2%;
+    color: black;
+}
+
+/* The about section */
+
+main div h2 {
+    color: #a3c8c3;
+    font-size: 25px;
+    margin: 0 2% 0 2%;
+    margin-top: 7px;
+    margin-bottom: 7px 
+}
+
+#about {
+    display: inline-block;
+    margin-left: 10px;
+    text-indent: 25px;
+    margin-right: 300px; 
+}
+
+#bridge_photo { 
+    float: right;
+    margin: 1%;
+    padding: 0 3% 0 3%;
+    vertical-align: right;
+    margin: 0;
+    padding-left: 2%;
+    display: inline-block;
+}
+
+div article table th, td {
+    border: 1px solid black;
+}
+
+#submit {
+    margin: 10px;
+}
+
+
+#info figure {
+    background-color: white;
+    filter: white;
+}
+
+.info {
+    background-color: white;
+}
+
+/* Footer display */
+
+footer {
+    clear: both;
+    background-size: cover;
+    background-color: #454545;
+    padding: 10px;
+    text-align:  left;
+    color: white;
+    width: 100%;
+}
+
+footer div {
+    display: inline-block;
+    margin-left: 50%;
+    display: inline;
+    list-style-type: none;
+}
+
+.col-footer {
+     margin-right: 2px;
+}
+
+#links {
+     margin-left: 6px;
+}
+
+#about{ transition: width 2s, height 2s, transform 5s;
+}
+#about:hover {
+
+ transform: rotate(45deg);
+}
