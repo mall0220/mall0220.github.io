@@ -2,19 +2,11 @@ window.onload = init;
 
 function init() {
 
-	document.querySelector('#color-1').onclick = changeColor;
-	document.querySelector('#color-2').onclick = changeColor;
-	document.querySelector('#color-3').onclick = changeColor;
-
-	document.querySelector('#loadTable').onclick = createTableFromJSON;
-
-
 	
-	document.querySelector('.reset').onclick = colorReset;
 	
 	document.querySelector('.ham').onclick = showHideMobileMenu;
 
-	$('#form').submit(function (e) {
+	$('#submit').submit(function (e) {
 		
    		 e.preventDefault();
    		 
@@ -27,43 +19,10 @@ function init() {
    		 		createTableFromJSON();
 		   		
    		 		$('.overlay-container').delay(500).fadeOut(500);
-   		 })
+   		 });
 	});
 
 }
-
-function changeColor() {
-
-	
-	var elementId = this.id;
-	
-	this.style.backgroundColor = "red";
-	
-	var indicatorText = document.getElementById("indicator-text");
-	
-	if(!indicatorText.innerHTML.includes(elementId)) {
-	
-		indicatorText.innerHTML = indicatorText.innerHTML+"<br>"+this.id+ " is active";
-	}
-
-}
-
-function colorReset() {
-
-	
-	var jsColorDivs = document.getElementsByClassName('js-color');
-
-	
-	for(var i =0; i <jsColorDivs.length; i++ ) {
-		
-		console.log(i);
-
-		jsColorDivs[i].style.backgroundColor ="";
-	}
-
-	document.getElementById("indicator-text").innerHTML="";
-}
-
 
 function showHideMobileMenu() {
 
@@ -89,11 +48,23 @@ function showformValues(form){
 		if(field.name=="email"){
 			$("#results").find("#"+field.name+"_result").attr("href", "mailto:"+field.value);
 		}
-	})				
+
+        if(field.name=="name"){
+            $("#results").find("#"+field.name+"_result").attr("href", "mailto:"+field.value);
+        }
+
+        if(field.name=="city"){
+            $("#results").find("#"+field.name+"_result").attr("href", "mailto:"+field.value);
+        }
+
+        if(field.name=="Postalcode"){
+            $("#results").find("#"+field.name+"_result").attr("href", "mailto:"+field.value);
+        }
+	});				
 }
 
  function createTableFromJSON() {
-        var myBooks = [
+        var schedule = [
             {
                 "Time": "09:00 - 11:00",
                 "Monday": "Comunication I",
@@ -128,13 +99,6 @@ function showformValues(form){
             }
         ]
 
-        var col = [];
-        for (var i = 0; i < myBooks.length; i++) {
-            for (var key in myBooks[i]) {
-                if (col.indexOf(key) === -1) {
-                    col.push(key);
-                }
-            }
         }
 
   
@@ -150,7 +114,7 @@ function showformValues(form){
         }
 
 
-        for (var i = 0; i < myBooks.length; i++) {
+        for (var i = 0; i < schedule; i++) {
 
         	
             tr = table.insertRow(-1);
@@ -159,11 +123,7 @@ function showformValues(form){
 				
                 var tabCell = tr.insertCell(-1);
                
-                tabCell.innerHTML = myBooks[i][col[j]];
             }
         }
 
-        var divContainer = document.getElementById("json_table");
-        divContainer.innerHTML = "";
-        divContainer.appendChild(table);
-    }
+       

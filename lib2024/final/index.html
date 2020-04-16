@@ -1,10 +1,13 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en-ca">
+
 <head>
 	<meta charset="utf-8">
 	<meta name="description" content="This ia a HTML document containing HTML tags">
 	<meta name="keywords" content="Assignment, webpage, css, js">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Final</title>
+	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -14,14 +17,14 @@
 		<!--The logo and title-->
 		<header>
 			<h1>My Logo</h1>
-			
+
 			<!--Navigation buttons-->
 			<nav>
 				<ul id="navigation" class="clearfix">
 					<li>
 						<a href="home.com">Home</a>
 					</li>
-					
+
 					<li>
 						<a href="about.com">About</a>
 					</li>
@@ -43,128 +46,135 @@
 		</header>
 
 		<main>
-			<!--about content-->
-			<div id="about" class="colum-left">
-				<h2>About</h2>
-				<article>
-					<p id="p1">
-					 An ecological footprint, as defined by the Oxford Dictionary online, is “the impact of a person or community on the environment, expressed as the amount of land required to sustain their use of natural resources.” The result is a measurement of land and water area needed to replace the resources used (measured in global hectares). 
-					</p>	
-					
-					<br>
-
-					<p id="p2">
-					A carbon footprint, as defined by the Oxford Dictionary online, is “The amount of carbon dioxideand other carbon compounds emitted due to the consumption of fossil fuels by a particularperson, group, etc.” The result is a measurement of the greenhouse gases (usually in tonnes of carbon dioxide) being emitted by the user. 
-					Both the ecological footprint and the carbon footprint measure the amount of resources we use.
-					</p>
-				</article>
-			</div>
-
-			<div>
-				<article>
-					<figure>
-						<img src="img/bridge.jpg" class="bridge" alt="bridge" width="300" height="200">
-					</figure>
-				</article>
-
-			<br>
-
-			<!--Schedule-->	
-			<div id="schedule" class="colum-left">
-				<h2>Schedule</h2>
-				<article>
-					<table border="1">	
-	              		<thead>
-	                   		<tr align="center">	
-	                     		<th>Time</th>
-	                           	<th>Monday</th>
-	                            <th>Tuesday</th>
-	                            <th>Wednesday</th>
-	                            <th>Thursday</th>
-	                            <th>Friday</th>
-	                        </tr>
-	                    </thead>
-	                   
-	                    <tbody>	
-	                        <tr align="center">
-	                            <td>09:00 - 11:00</td>
-	                            <td>Communications I</td>
-	                            <td>Client Services</td>
-	                            <td>Speacial Collections</td>
-	                            <td>Directed Research Seminar</td>
-	                            <td>Client Services</td>
-	                        </tr>
-	                       
-	                        <tr align="center">
-	                            <td>11:00 - 12:30</td>
-	                            <td>Refrence</td>
-	                            <td>Internet App</td>
-	                            <td>Library Software</td>
-	                            <td>French</td>
-	                            <td>Refrence</td> 
-	                        </tr>
-	                        
-	                        <tr align="center">
-	                        	<td>14:00 - 15:00</td>
-	                        	<td>Acquistions</td>
-	                        	<td>General Elective</td>
-	                        	<td>Marketing</td>
-	                        	<td>Emerging Library tech</td>
-	                        	<td>Library Software</td>
-	                        </tr>
-	                       
-	                        <tr align="center">
-	                        	<td>15:30 - 17:30</td>
-	                        	<td>French</td>
-	                        	<td>French</td>
-	                        	<td>Acqusitions</td>
-	                        	<td>Subject Analysis</td>
-	                        	<td>Internet App</td>
-	                        </tr>
-	                    </tbody>
-	                </table>
-				</article>
-			</div>
-
-			<br>
-
-		<!--Edit profile-->
-			<div>
-				<section id="profile">
-					<h2>Edit Profile</h2>
-					<form action="somepage.php" method="get">	
-						<div id="n-container" class="form-elm">
-							<label for="Name">Name</label>
-							<input type="text" name="Name" id="Name" placeholder="Name here">
-						</div> 
+			<div id="about">
+				<!--about content-->
+				<div id="s1">
+					<h2>About</h2>
+						<p id="p1">
+							An ecological footprint, as defined by the Oxford Dictionary online, is “the impact of a
+							person
+							or community on the environment, expressed as the amount of land required to sustain their
+							use
+							of natural resources.” The result is a measurement of land and water area needed to replace
+							the
+							resources used (measured in global hectares).
+						</p>
 
 						<br>
-						
+
+						<p id="p2">
+							A carbon footprint, as defined by the Oxford Dictionary online, is “The amount of carbon
+							dioxideand other carbon compounds emitted due to the consumption of fossil fuels by a
+							particularperson, group, etc.” The result is a measurement of the greenhouse gases (usually
+							in
+							tonnes of carbon dioxide) being emitted by the user.
+							Both the ecological footprint and the carbon footprint measure the amount of resources we
+							use.
+						</p>
+				</div>
+
+				<div id="pic">
+					<img src="img/bridge.jpg" class="bridge" alt="bridge">
+				</div>
+			</div>
+			
+			<br>
+
+			<!--Schedule-->
+			<div id="schedule">
+				<article>
+					<h2>Schedule</h2>
+					<table >
+						<thead>
+							<tr>
+								<th>Time</th>
+								<th>Monday</th>
+								<th>Tuesday</th>
+								<th>Wednesday</th>
+								<th>Thursday</th>
+								<th>Friday</th>
+							</tr>
+						</thead>
+
+						<tbody>
+							<tr>
+								<td>09:00 - 11:00</td>
+								<td>Communications I</td>
+								<td>Client Services</td>
+								<td>Speacial Collections</td>
+								<td>Directed Research Seminar</td>
+								<td>Client Services</td>
+							</tr>
+
+							<tr>
+								<td>11:00 - 12:30</td>
+								<td>Refrence</td>
+								<td>Internet App</td>
+								<td>Library Software</td>
+								<td>French</td>
+								<td>Refrence</td>
+							</tr>
+
+							<tr>
+								<td>14:00 - 15:00</td>
+								<td>Acquistions</td>
+								<td>General Elective</td>
+								<td>Marketing</td>
+								<td>Emerging Library tech</td>
+								<td>Library Software</td>
+							</tr>
+
+							<tr>
+								<td>15:30 - 17:30</td>
+								<td>French</td>
+								<td>French</td>
+								<td>Acqusitions</td>
+								<td>Subject Analysis</td>
+								<td>Internet App</td>
+							</tr>
+						</tbody>
+					</table>
+				</article>
+			</div>
+
+			<br>
+
+			<!--Edit profile-->
+			<div id="s3">
+				<div id="profile">
+					<h2>Edit Profile</h2>
+					<form action="somepage.php" method="get">
+						<div id="n-container" class="form-elm">
+							<label for="Name">Name</label>
+							<input type="text" name="Name" id="Name" placeholder="Name here" required>
+						</div>
+
+						<br>
+
 						<div id="email-container" class="form-elm">
 							<label for="email">Email</label>
-							<input type="email" name="email" id="email" placeholder="your-email@email.com">
-						</div> 
+							<input type="email" name="email" id="email" placeholder="your-email@email.com" required>
+						</div>
 
 						<br>
 
 						<div id="adress-container" class="form-elm">
-							<label for="adress">Adress</label>
-							<input type="text" name="Adress" id="adress" placeholder="Adress here"> 
-						</div> 
+							<label for="add">Address</label>
+							<input type="text" name="Address" id="add" placeholder="Address here" required>
+						</div>
 
 						<br>
 
 						<div id="city-container" class="form-elm">
 							<label for="city">City</label>
-							<input type="text" name="City" id="city" placeholder="City here">
-						</div> 
+							<input type="text" name="City" id="city" placeholder="City here" required>
+						</div>
 
 						<br>
 
 						<div id="province-contianer" class="form-elm">
-							<label for="Province">Province</label>
-							<select id="Province" name="Province">
-								<optgroup label="Canada">
+							<label for="province">Province</label>
+							<select id="province" name="province">
 									<option value="ON">Ontario</option>
 									<option value="QC">Quebec</option>
 									<option value="BC">British Columbia</option>
@@ -172,107 +182,104 @@
 									<option value="MB">Manitoba</option>
 									<option value="SK">Saskatchewan</option>
 									<option value="NS">Nova Scotia</option>
-									<option value="NB">New Brunswick</option> 
+									<option value="NB">New Brunswick</option>
 									<option value="NL">Newfoundland and Labrador</option>
 									<option value="PEI">Prince Edward Island</option>
-									<option value="NT">Northwest Territories</option> 
+									<option value="NT">Northwest Territories</option>
 									<option value="YT">Yukon</option>
 									<option value="NU">Nanavut</option>
 									<option value="N/A">N/A</option>
-								</optgroup>
 							</select>
 						</div>
 
 						<br>
 
 						<div id="postal-container" class="form-elm">
-							<label for="Postalcode">Postal Code</label>
-							<input type="text" name="Postalcode" id="Postalcode" placeholder="Postalcode here"> 
-						</div> 
-						
+							<label for="postalcode">Postal Code</label>
+							<input type="text" name="postalcode" id="postalcode" placeholder="Postalcode here" required>
+						</div>
+
 						<br>
 
-						<button id="submit" type="submit">Submit</button>
+						<button id="submit" type="button">Submit</button>
 					</form>
-				</section>
-			</div>
-
-			<br>
-
-			<div>
-				<section id="info" class="info">
-					<h2>Profile Info</h2>
-										
-					<figure>
-						<img src="img/profile.png" class="info" width="150" height="125" value="">
-					</figure>
-					
-					<p>John Doe</p>
-					
-					<p>JohnDoe@algonquincollege.com</p>
-					
-					<p>1385 Woddroffe Ave, Nepean,</p>
-					
-					<p>ON, K2G 1V8</p>
-					
-					<figure>
-						<img src="img/mail.png" class="info" width="100"
-						height="50">
-					</figure>
-				</section>
-			</div>
-
-		   <!--footer content-->	
-			<footer class="footer" id="footer">
-				<div class="footer-container">
-					<section class="col-footer links">
-						<h4>Quick Links</h4>
-						<nav id="links">
-							<ul>
-								<li>
-									<a href="schedule.html">Schedule</a>
-								</li>
-								
-								<li>
-									<a href="about.html">About</a>
-								</li>
-								
-								<li>
-									<a href="portfolio.html">Portfolio</a>
-								</li>
-
-								<li>
-									<a href="contact.html">Contact</a>
-								</li>
-							</ul>
-						</nav>
-					</section>
-
-					<section class="col-footer" id="social-media">
-						<h4>Follow Us</h4>
-							<ul>	
-								<li>	
-									<a href="https://facebook.com"><img src="img/facebook.png" class="footer" alt="Facebook"></a>
-								</li>
-								
-								<li>
-									<a href="https://youtube.com"><img src="img/youtube.png" class="footer" alt="Youtube"></a>
-								</li>
-								
-								<li>
-									<a href="https://twitter.com"><img src="img/twitter.png" class="footer" alt="Twitter"></a>
-								</li>
-							</ul>
-					</section>
-
-					<section id="adress" class="col-footer">
-						<h4>Adress</h4>
-						<address>
-							<p>1385 Woodroffe Ave, <br> Nepean, ON K2G 1V8 <br> Canada</p>
-						</address>
-					</section>
 				</div>
-			</footer>
+
+
+				<div>
+					<div id="info" class="info">
+						<h2>Profile Info</h2>
+	
+						<i class="fas fa-user" style="font-size: 100px"></i>
+	
+						<h3>John Doe</h3>
+	
+						<p>JohnDoe@algonquincollege.com</p>
+	
+						<p>1385 Woodroffe Ave, Nepean,</p>
+	
+						<p>ON, K2G 1V8</p>
+	
+						<i class="far fa-envelope" style="font-size: 50px"></i>
+					</div>
+				</div>
+			</div>
+
+		</main>
+		<!--footer content-->
+		<footer class="footer" id="footer">
+			<div class="footer-container">
+				<div class="col-footer links">
+					<h4>Quick Links</h4>
+					<nav id="links">
+						<ul>
+							<li>
+								<a href="schedule.html">Schedule</a>
+							</li>
+
+							<li>
+								<a href="about.html">About</a>
+							</li>
+
+							<li>
+								<a href="portfolio.html">Portfolio</a>
+							</li>
+
+							<li>
+								<a href="contact.html">Contact</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+
+				<div class="col-footer" id="social-media">
+					<h4>Follow Us</h4>
+					<br>
+					<ul>
+						<li>
+							<a href="https://facebook.com"><img src="img/facebook.png" class="footer"
+									alt="Facebook"></a>
+						</li>
+
+						<li>
+							<a href="https://youtube.com"><img src="img/youtube.png" class="footer" alt="Youtube"></a>
+						</li>
+
+						<li>
+							<a href="https://twitter.com"><img src="img/twitter.png" class="footer" alt="Twitter"></a>
+						</li>
+					</ul>
+				</div>
+
+				<div id="address" class="col-footer">
+					<h4>Address</h4>
+					<p>1385 Woodroffe Ave,</p> 
+					<p>Nepean, ON K2G 1V8</p> 
+					<p>Canada</p>
+				</div>
+			</div>
+		</footer>
 	</div>
 </body>
-</html> 
+
+</html>
